@@ -1,7 +1,0 @@
-#calculate the simple interest
-echo Enter P, R and T
-read P R T
-SI=`echo $P \* $T \* $R / 100|bc -l`
-echo Simple Interest is $SI
-
- 
