@@ -1,0 +1,10 @@
+#Convert celcius to Fahrenheit
+
+echo Enter value of celcius
+read c
+
+f=`echo "scale=2; $c * (9 / 5) + 32"|bc -l`
+echo The value of Fahrenheit is $f
+
+
+

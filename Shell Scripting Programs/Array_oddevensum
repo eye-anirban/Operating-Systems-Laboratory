@@ -1,0 +1,29 @@
+#find sum of odd elements and even elements
+
+echo Enter the size of the array
+read n
+
+i=0
+while [ $i -lt $n ]
+do
+read a[$i]
+i=`expr $i + 1`
+done
+
+even=0
+odd=0
+i=0
+while [ $i -lt $n ]
+do
+if [ `expr ${a[$i]} % 2` -eq 0 ]
+then 
+even=`expr ${a[$i]} + $even`
+else 
+odd=`expr ${a[$i]} + $odd`
+fi
+i=`expr $i + 1`
+done
+echo Sum of odd Numbers is $odd
+echo Sum of even numbers of $even
+
+

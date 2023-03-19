@@ -1,0 +1,22 @@
+#Cost price sell price
+echo Anirban Hazra 2005643
+echo Enter Sell Price and Cost Price
+read sp cp
+if [ $sp -lt $cp ]
+then
+c=`expr $cp - $sp`
+echo LOSS INCURRED IS RS. $c
+fi 
+if [ $sp -gt $cp ]
+then
+echo Anirban Hazra 2005643
+c=`expr $sp - $cp`
+echo PROFIT INCURRED IS RS. $c
+fi 
+if [ $sp -eq $cp ]
+then
+echo NO PROFIT OR LOSS INCURRED
+fi 
+echo Anirban Hazra 2005643
+
+

@@ -1,0 +1,6 @@
+#Area of Triangle
+echo Enter base and Height of Triangle 
+read b h
+ar=$(((b * h)/2))
+echo Area of Triangle is $ar
+

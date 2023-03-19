@@ -1,0 +1,8 @@
+#program to calculate compound interest
+
+echo Enter Values of Principle , Time , Rate
+read p t r
+ci=`echo "scale=2; $p * (( 1 + $r * 0.01 ) ^ $t)"|bc -l`
+echo COMPOUND INTEREST IS $ci 
+
+

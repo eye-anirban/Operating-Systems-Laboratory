@@ -1,0 +1,10 @@
+#calculate Distance travelled by an object
+
+echo Enter values of a , u , t
+read a u t
+
+s=`echo "scale=2; ($u * $t) + (0.5 * $a * $t * $t)"|bc -l`
+
+echo DISTANCE travelled is $s
+
+

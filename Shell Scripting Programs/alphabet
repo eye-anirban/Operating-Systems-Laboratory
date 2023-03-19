@@ -1,0 +1,27 @@
+#Alphabet is vowel or consonant
+
+echo Enter an alphabet
+read s
+
+case $s in
+a)
+echo Alphabet is Vowel
+;;
+e)
+echo Alphabet is Vowel
+;;
+i)
+echo Alphabet is Vowel
+;;
+o)
+echo Alphabet is Vowel
+;;
+u)
+echo Alphabet is Vowel
+;;
+*) 
+echo Alphabet is Consonant
+;;
+esac
+
+

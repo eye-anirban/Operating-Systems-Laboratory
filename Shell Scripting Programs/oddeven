@@ -1,0 +1,13 @@
+#to find if odd or even
+
+echo Enter a number
+read x
+p=`expr $x % 2`
+if [ $p -eq 0 ]
+then 
+echo Even Number
+else
+echo Odd Number
+fi
+
+

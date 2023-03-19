@@ -1,0 +1,15 @@
+# factororial of a number
+
+echo Enter a number
+read num
+
+f=1
+
+while [ $num -gt 1 ]
+do
+f=`expr $f \* $num`
+num=`expr $num - 1`
+done
+
+echo $f is the factorial
+

@@ -1,0 +1,32 @@
+echo enter the size of array
+read n
+i=0
+while [ $i -lt $n ]
+do
+read a[$i]
+i=`expr $i + 1`
+done
+i=0
+while [ $i -lt $n ]
+do
+	s=`expr $n - $i - 1`
+	j=0
+	while [ $j -lt $s ]
+	do
+		if [ ${a[$j]} -gt ${a[$j+1]} ]
+		then
+			t=${a[$j]}
+			a[$j]=${a[$j+1]}
+			a[$j+1]=$t
+		fi
+		j=`expr $j + 1`
+	done
+	i=`expr $i + 1`
+done
+i=0
+echo Sorted array :
+while [ $i -lt $n ]
+do
+	echo ${a[$i]}
+	i=`expr $i + 1`
+done

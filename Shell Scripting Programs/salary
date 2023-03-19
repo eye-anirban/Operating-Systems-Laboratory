@@ -1,0 +1,17 @@
+#to calculate gross salary of employee
+
+echo Enter Basic Salary
+read s
+if test $s -lt 1500
+then 
+hra=`echo "scale=2; (0.1 * $s)"|bc -l`
+da=`echo "scale=2; (0.9 * $s)"|bc -l`
+g=`echo "scale=2; ($s + $hra + $da)"|bc -l` 
+echo Gross Salary is $g
+else
+hra=500
+da=`echo "scale=2; (0.98 * $s)"|bc -l`
+g=`echo "scale=2; ($s + $hra + $da)"|bc -l` 
+echo Gross Salary is $g
+fi
+

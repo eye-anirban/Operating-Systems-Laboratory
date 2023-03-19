@@ -1,0 +1,11 @@
+#to find real roots of quadratic equation
+
+echo Enter a,b,c of polynomial
+read a b c
+r1=`echo "scale=2; ( -$b - sqrt($b * $b - 4 * $a * $c))/( 2 * $a )"|bc `
+r2=`echo "scale=2; ( -$b + sqrt($b * $b - 4 * $a * $c))/( 2 * $a )"|bc `
+echo The roots are $r1 and $r2
+
+
+
+

@@ -1,0 +1,17 @@
+#calculate electricity bill in different slabs
+
+echo Enter number of units consumed
+read n
+
+if [ $n -lt 500 ]
+then
+bill=`echo "scale=2;  $n * 50 "|bc -l`
+elif [ $n -eq 500 -a $n -lt 1000 ]
+then 
+bill=`echo "scale=2;  $n * 100 "|bc -l`
+else
+bill=`echo "scale=2;  $n * 150 "|bc -l`
+fi
+echo BILL is $bill
+
+

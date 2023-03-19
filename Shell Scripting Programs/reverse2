@@ -1,0 +1,13 @@
+# reverse of a number
+echo Enter a number
+read n
+rev=0
+p=0
+until [ $n -le 0 ]
+do
+p=`expr $n % 10`
+rev=`expr $rev \* 10 + $p`
+n=`expr $n / 10`
+done
+echo Reverse Number is $rev
+

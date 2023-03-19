@@ -1,0 +1,21 @@
+#Greatest of 3 nos
+echo Enter 3 nos
+read a b c
+if [ $a -gt $b ]
+then 
+if [ $a -gt Sc ]
+then 
+echo $a is greatest
+else
+echo $c is greatest
+fi
+elif [ $b -gt $c ]
+then 
+echo $b is greatest
+else
+echo $c is greatest
+fi
+
+
+ 
+

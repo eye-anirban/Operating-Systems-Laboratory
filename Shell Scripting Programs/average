@@ -1,0 +1,9 @@
+#To find average of 3 numbers
+
+echo Enter 3 numbers
+read a b c
+d=`expr $a + $b + $c`
+e=`expr $d / 3`
+echo Average of 3 numbers is $e
+
+ 

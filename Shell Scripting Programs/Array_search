@@ -1,0 +1,24 @@
+#to perform linear search in an array
+echo Enter number of elements
+read n
+echo Enter the Array elements
+i=1
+while [ $i -le $n ]
+do
+read a[$i]
+i=`expr $i + 1`
+done
+echo Enter the element to be searched
+read x
+j=1 
+while [  $j -lt $n  -a  $item -ne ${a[$j]}  ]
+do 
+j=`expr $j + 1`
+done
+if [ $item -eq ${a[$j]} ]
+then 
+echo $item is at position $j
+else
+echo $item is not present in array
+fi
+

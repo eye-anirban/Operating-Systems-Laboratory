@@ -1,0 +1,16 @@
+#to check if a number is positive , negative or neutral
+
+echo Enter the number
+read n
+
+if [ $n -lt 0 ]
+then 
+echo NUMBER IS NEGATIVE
+elif [ $n -gt 0 ]
+then 
+echo NUMBER IS POSITIVE
+else 
+echo NUMBER IS 0
+fi
+
+

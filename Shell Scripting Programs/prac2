@@ -1,0 +1,17 @@
+#Sum of digits until it becomes single digit
+echo Anirban Hazra 2005643
+echo Enter a number
+read n
+sum=0
+while [ $n -gt 0 -o $sum -lt 10 ]
+do
+p=`expr $n % 10`
+sum=`expr $sum + $p`
+n=`expr $n / 10`
+done
+echo Anirban Hazra 2005643
+sum=`expr $sum / 10`
+echo Required Sum is $sum
+echo Anirban Hazra 2005643
+
+

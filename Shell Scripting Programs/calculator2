@@ -1,0 +1,40 @@
+#Implement Simple Calculator using Switch Case
+
+echo Enter 2 numbers
+read a b
+
+echo 1 for ADD
+echo 2 for SUBTRACT
+echo 3 for MULTIPLY
+echo 4 for DIVIDE
+echo 5 for MODULUS
+
+read c
+
+case $c in
+1)
+c=`expr $a + $b`
+echo SUM is $c
+;; 
+2)
+c=`expr $a - $b`
+echo DIFFERENCE is $c
+;; 
+3)
+c=`expr $a \* $b`
+echo PRODUCT is $c
+;; 
+4)
+c=`expr $a / $b`
+echo QUOTIENT is $c
+;;
+5)
+c=`expr $a % $b`
+echo MODULUS is $c
+;;  
+*)
+echo WRONG INPUT
+;;
+esac
+
+

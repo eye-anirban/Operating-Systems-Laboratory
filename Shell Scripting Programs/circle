@@ -1,0 +1,10 @@
+#Area and Circumference of a Circle
+
+echo Enter the Radius of Circle
+read r
+ar=$(bc <<< "$r * $r * 3.14")
+c=$(bc <<< "2 * 3.14 * $r")
+echo Circumference is $c .
+echo Area is $ar
+
+

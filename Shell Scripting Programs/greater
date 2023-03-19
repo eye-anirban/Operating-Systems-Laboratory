@@ -1,0 +1,12 @@
+#find greater between 2 numbers
+
+echo Enter 2 numbers 
+read a b
+if test $a -lt $b
+then
+echo $b is greater than $a
+else
+echo $a is greater than $b
+fi
+
+
